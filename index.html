@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <script defer src="js/jquery.min.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="log"></div>
+                <div class="logo">
+                    <a href="#"><img src="img/logo.png" alt="logo"></a>
+                </div>
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
+                    <li class="menu__item"><a class="menu__link" href="catalog.html" target="_blank">Каталог</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Делимся опытом</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+                </ul>
+                <div class="header__phone"><a href="tel:+73833120767">+7 383 312-07-67</a></div>
+                <div class="header__phone_mob"><a href="tel:+73833120767"><img src="img/btn_call.png" alt="call"></a></div>
+            </div>
+        </div>
+    </header>
+    <section class="promo">
+        <div class="mouse-parallax">
+            <div class="container">
+                <div class="promo__wrapper">
+                    <div class="promo__content">
+                        <h1 class="promo__title">Расходные материалы для медицинских лабораторий </h1>
+                        <p class="promo__subtitle">со склада в Москве и Новосибирске</p>
+                    </div>
+                    <div class="promo__content">
+                        <ul class="promo__list">
+                           <li>Цена на 60% ниже европейских аналогов</li>
+                           <li>Бесплатная апробация товара</li>
+                           <li>Оперативные поставки с собственных складов</li>
+                        </ul>
+                        <div class="btn consult">Отправить запрос</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mouse-parallax-bg">
+                
+            </div>
+        </div>
+        
+    </section>
+    <section class="video">
+        <div class="container">
+            <div class="video__wrapper">
+                <div class="video__content">
+                    <h2 class="video__title">Как мы обеспечили качество при цене на 60% ниже европейских аналогов</h2>
+                    <div class="video__content_mob"><iframe  src="https://www.youtube.com/embed/BQjSPg20LVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="video__content__wrap">
+                        <p class="video__subtitle">
+                            Мы уверены в качестве нашей продукции, поэтому высылаем образцы абсолютно бесплатно.
+                        </p>
+                        <div class="btn consult">Оставить заявку</div>
+                    </div>
+                </div>
+                <div class="video__content video__content_desc"><iframe src="https://www.youtube.com/embed/BQjSPg20LVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+        </div>
+    </section>
+     <!-- modal -->
+     <div class="overlay" ></div>
+     <div class="modal">
+         <div class="modal__close">&times;</div>
+         <p class="modal__title">Запрос образцов</p>
+         <p class="modal__text">Оставьте свои контактные данные и менеджер свяжется с вами в ближайшее время, чтобы уточнить детали.</p>
+         <form class="modal__form" action="#">
+             <input type="text" placeholder="Имя" name="name" required>
+             <input type="number" placeholder="Телефон" name="phone" required>
+             <input type="email" placeholder="E-mail" name="email"></input>
+             <button class="btn" type="submit">Отправить запрос</button>
+         </form>
+     </div>
+     
+</body>
+</html>

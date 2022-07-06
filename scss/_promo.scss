@@ -1,0 +1,53 @@
+.promo {
+   
+    &__wrapper {
+        z-index: 10;
+        position: relative;
+        margin-top: 215px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 472px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 130%;
+    }
+    &__subtitle {
+        margin-top: 24px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 140%;
+    }
+    &__content {
+        width: 554px;
+    }
+    &__list {
+        list-style-image: url(../img/check.svg);
+        margin-bottom: 90px;
+        padding-left: 20px;
+        li {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 170%;
+            color: $main-color;
+        }
+    }
+}
+.mouse-parallax {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.mouse-parallax-bg {
+    position: absolute;
+    top: 0;
+    background-image: url(../img/bg_promo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 110%;
+    height: 110%;
+    transition: all 0.1s ease;  
+}
